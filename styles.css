@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	margin: 0;
+	background-image: url("http://getwallpapers.com/wallpaper/full/f/9/7/149284.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+button{
+	color: #FFF;
+	width: 60px;
+	border: none;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px; 
+	background-color: rgba(0,0,0,0.40);
+	transition: background-color 1s ease;
+	cursor: pointer;
+}
+button:hover{
+	background-color: rgba(0,0,0,0.80);
+}
+
+/* LAYOUT */
+#wrapper{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+#container{
+	width: 100%;
+	
+	justify-content: center;
+	
+	display: inline-flex;
+	align-items:center;
+	
+}
+.box{
+	max-width: 230px;
+	margin: 1%;
+    display: flex;
+	flex-grow: 1;
+	align-items: center;
+    justify-content: center;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px; 
+	background-color: #FFF;
+}
+#reddy{
+ max-width: 230px;
+	margin: 1%;
+    display: flex;
+	flex-grow: 1;
+	align-items: center;
+    justify-content: center;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px; 
+	background-color: #FFF;
+	}
+
+.sravan {
+    padding-left: 100px;
+    padding-right: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+
+
+/* COLORS */
+.red{
+	background-color: rgba(199,16,56,1.00);
+}
+.green{
+	background-color:rgba(23,201,104,1.00);
+}
+.blue{
+	background-color:rgba(26,136,215,1.00);
+}
+.newColor{
+    background-color: var(--color);
+}
+.center{
+
+     max-width: 980px;
+    display: contents;
+	align-items:center;
+    
+}
+@media only screen and (max-width: 600px) {
+   
+    #container{
+        width: 100%;
+        max-width: 980px;
+        height: 100%;
+        display: unset;
+        align-items:center;
+        background: rgba(255,255,255,0.50)
+    }
+
+	.box{margin-left:19%}
+   
+    
+  }
